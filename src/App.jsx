@@ -20,12 +20,6 @@ export const App = () => {
   const inputRefs = useRef([]);
   const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-  const handleInput = (e, index) => {
-    const inputValue = e.target.value;
-    const newInputs = [...inputs];
-    newInputs[index] = inputValue;
-    setInputs(newInputs);
-  };
   useEffect(() => {
     inputRefs.current[currentInput].focus();
    
@@ -33,10 +27,17 @@ export const App = () => {
   }, [currentInput]);
 
   const test = (e,setvalue) => {
-    
-    
-    setvalue(e.nativeEvent.data)
     let index = e.target.id;
+    
+    if(e.nativeEvent.data === null) {
+      setvalue("")
+      
+    }
+    if(e.nativeEvent.data !== null) {
+      setvalue(e.nativeEvent.data)
+   
+    }
+    
    
     if (
       e.nativeEvent.inputType === "deleteContentBackward" &&
@@ -85,7 +86,7 @@ export const App = () => {
             value={value1}
             min={0}
             max={9}
-          required
+          
         />
         <input
           id={1}
@@ -100,7 +101,7 @@ export const App = () => {
           onChange={(e)=> test(e,setValue2)}
           min={0}
           max={9}
-        required
+        
           
         />
         <input
@@ -115,7 +116,7 @@ export const App = () => {
           maxLength={1}
           min={0}
           max={9}
-       required
+       
           
         />
         <input
@@ -130,7 +131,7 @@ export const App = () => {
           maxLength={1}
           min={0}
           max={9}
-         required
+         
           
         />
         <input
@@ -145,7 +146,7 @@ export const App = () => {
           maxLength={1}
           min={0}
           max={9}
-          required
+          
           
         />
         <input
@@ -161,7 +162,7 @@ export const App = () => {
           maxLength={1}
           min={0}
           max={9}
-        required
+        
           
         />
        
