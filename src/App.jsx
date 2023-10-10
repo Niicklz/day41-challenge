@@ -78,7 +78,7 @@ export const App = () => {
           
           ref={(el) => (inputRefs.current[0] = el)}
           className="input-field"
-          type="number" // Cambiado a text para permitir valores no numéricos
+          type="number"
           placeholder="0"
           maxLength={1}
           onChange={(e)=> test(e,setValue1)}
@@ -94,7 +94,7 @@ export const App = () => {
           value={value2}
           ref={(el) => (inputRefs.current[1] = el)}
           className="input-field"
-          type="number" // Cambiado a text para permitir valores no numéricos
+          type="number"
           placeholder="0"
           maxLength={1}
           onChange={(e)=> test(e,setValue2)}
@@ -110,7 +110,7 @@ export const App = () => {
           value={value3}
           ref={(el) => (inputRefs.current[2] = el)}
           className="input-field"
-          type="number" // Cambiado a text para permitir valores no numéricos
+          type="number" 
           placeholder="0"
           maxLength={1}
           min={0}
@@ -125,7 +125,7 @@ export const App = () => {
           value={value4}
           ref={(el) => (inputRefs.current[3] = el)}
           className="input-field"
-          type="number" // Cambiado a text para permitir valores no numéricos
+          type="number" 
           placeholder="0"
           maxLength={1}
           min={0}
@@ -140,7 +140,7 @@ export const App = () => {
           value={value5}
           ref={(el) => (inputRefs.current[4] = el)}
           className="input-field"
-          type="number" // Cambiado a text para permitir valores no numéricos
+          type="number" 
           placeholder="0"
           maxLength={1}
           min={0}
@@ -156,7 +156,7 @@ export const App = () => {
           value={value6}
           ref={(el) => (inputRefs.current[5] = el)}
           className="input-field"
-          type="number" // Cambiado a text para permitir valores no numéricos
+          type="number" 
           placeholder="0"
           maxLength={1}
           min={0}
