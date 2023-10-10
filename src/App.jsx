@@ -61,7 +61,7 @@ export const App = () => {
       setCurrentInput(parseInt(index)+1);
     }
 
-    c
+    
   };
   return (
     <div className="card">
