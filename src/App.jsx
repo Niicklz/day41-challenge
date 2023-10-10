@@ -57,7 +57,7 @@ export const App = () => {
       return;
     }
 
-    if (currentInput < 5) {
+    if (currentInput < 5 && index < 5) {
         
       setCurrentInput(parseInt(index)+1);
     }
