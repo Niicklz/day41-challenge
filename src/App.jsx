@@ -74,7 +74,7 @@ export const App = () => {
       <div className="inputs-container">
         <input
           id={0}
-          pattern=" \d*"
+          pattern="\d*"
           
           ref={(el) => (inputRefs.current[0] = el)}
           className="input-field"
@@ -89,7 +89,7 @@ export const App = () => {
         />
         <input
           id={1}
-          pattern=" \d*"
+          pattern="\d*"
          
           value={value2}
           ref={(el) => (inputRefs.current[1] = el)}
@@ -105,7 +105,7 @@ export const App = () => {
         />
         <input
           id={2}
-          pattern=" \d*"
+          pattern="\d*"
           onChange={(e)=> test(e,setValue3)}
           value={value3}
           ref={(el) => (inputRefs.current[2] = el)}
@@ -120,7 +120,7 @@ export const App = () => {
         />
         <input
           id={3}
-          pattern=" \d*"
+          pattern="\d*"
           onChange={(e)=> test(e,setValue4)}
           value={value4}
           ref={(el) => (inputRefs.current[3] = el)}
@@ -135,7 +135,7 @@ export const App = () => {
         />
         <input
           id={4}
-          pattern=" \d*"
+          pattern="\d*"
           onChange={(e)=> test(e,setValue5)}
           value={value5}
           ref={(el) => (inputRefs.current[4] = el)}
@@ -151,7 +151,7 @@ export const App = () => {
         <input
           id={5}
           
-          pattern=" \d*"
+          pattern="\d*"
           onChange={(e)=> test(e,setValue6)}
           value={value6}
           ref={(el) => (inputRefs.current[5] = el)}
